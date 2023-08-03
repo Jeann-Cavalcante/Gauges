@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   label: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: "bold",
   },
   title: {

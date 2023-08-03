@@ -3,15 +3,27 @@ import {Text, View } from "react-native";
 import RNSpeedometer from "react-native-speedometer";
 import styles from "./styles";
 import { PropsGauges } from "../../types/Props";
+import { useEffect, useState } from "react";
 
 const Gauges = ({ value, titleLabel }: PropsGauges) => {
+  const [colorText, setColorText] = useState("black");
+
+  useEffect(() => {
+    if (value < 30) {
+      setColorText("#FD4233");
+    } else if (value >= 30 && value < 60) {
+      setColorText("#FF9901");
+    } else {
+      setColorText("#009E53");
+    }
+  }, [value]);
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{titleLabel.split(" ").join('\n')}</Text>
       <RNSpeedometer
         value={value}
-        size={100}
+        size={80}
         minValue={0}
         maxValue={80}
         allowedDecimals={0}
@@ -40,7 +52,7 @@ const Gauges = ({ value, titleLabel }: PropsGauges) => {
           display: "none",
         }}
       />
-      <Text style={styles.label}>{String(value).replace(".", ",")}%</Text>
+      <Text style={[styles.label, {color: colorText} ] }>{String(value).replace(".", ",")}%</Text>
     </View>
   );
 };
