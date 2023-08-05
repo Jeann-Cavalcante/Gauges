@@ -14,11 +14,27 @@ export const styles = StyleSheet.create({
   appointmentContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    borderWidth: 1,
+    borderWidth: 2,
     borderRadius: 10,
     padding: 10,
     marginBottom: 10,
     backgroundColor: "#EFEFEF",
+    position: "relative",
+  },
+  image: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    shadowColor: "#000",
+    shadowRadius: 2,
+    shadowOffset: {
+      width: 3,
+      height: 3,
+
+    },
+    position: "absolute",
+    top: -10,
+    left: -10,
   },
   appointment: {
     flexDirection: "column",
@@ -34,18 +50,24 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 10,
     borderRadius: 5,
     fontWeight: "bold",
+    fontSize: 12,
   },
   title: {
     marginTop: 8,
-    
   },
   iconContainer: {
-    flexDirection: "row",
-    gap: 8,
+    position: "relative",
   },
   icons: {
     justifyContent: "space-between",
     alignItems: "center",
-    paddingLeft: 10,
+  },
+  icon: {
+    width: 25,
+    textAlign: "center",
+  },
+  iconNotify: {
+    position: "absolute",
+    left: -15,
   },
 });

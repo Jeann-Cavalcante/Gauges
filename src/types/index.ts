@@ -14,5 +14,6 @@ export type AppointmentsDb = {
   title: string;
   badge: Badge[];
   icons: Icons[];
-  alert: boolean;
+  alert?: string;
+  image?: string;
 };
