@@ -13,7 +13,8 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginTop: 40,
     backgroundColor: "#fff",
-    padding: 10,
+    paddingHorizontal: 20,
+    paddingVertical: 15,
   },
   containerGauges: {
     flexDirection: "row",
@@ -21,7 +22,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    fontSize: 20,
+    fontSize: 16,
     marginBottom: 20,
     fontWeight: "bold"
   }
