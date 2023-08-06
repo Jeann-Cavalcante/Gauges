@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
@@ -51,5 +51,5 @@ export const styles = StyleSheet.create({
   },
   legendText: {
     fontSize: 10,
-  }
+  },
 });

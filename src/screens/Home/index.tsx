@@ -3,14 +3,21 @@ import Gauges from "../../components/Gauges";
 import { styles } from "./styles";
 import Appointments from "../../components/Appointments";
 import Pie from "../../components/Pie";
+import Tabs from "../../components/Tabs";
+import { useState } from "react";
 
 
 const Home = () => {
+  const [active, setActive] = useState("pessoal" as "pessoal" | "departamento");
 
+  const handleActive = (active: "pessoal" | "departamento") => {
+    setActive(active);
+  };
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
+        <Tabs handleActive={handleActive} active={active} />
         <View style={styles.dp}>
           <Text style={styles.title}>Desempenho pessoal</Text>
 
