@@ -24,6 +24,32 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     marginBottom: 20,
-    fontWeight: "bold"
+    fontWeight: "bold",
+  },
+  containerPie: {
+    flexDirection: "column",
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    marginTop: 20,
+    paddingHorizontal: 20,
+    paddingVertical: 15,
+  },
+  pies: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  containerLegend: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    marginTop: 20,
+  },
+  legend: {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  legendText: {
+    fontSize: 10,
   }
 });
