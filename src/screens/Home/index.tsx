@@ -5,6 +5,7 @@ import Appointments from "../../components/Appointments";
 import Pie from "../../components/Pie";
 import Tabs from "../../components/Tabs";
 import { useState } from "react";
+import Menu from "../../components/Menu";
 
 
 const Home = () => {
@@ -15,8 +16,9 @@ const Home = () => {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
+    <SafeAreaView style={{flex: 1}}>
+      <Menu />
+      <ScrollView style={styles.container}>
         <Tabs handleActive={handleActive} active={active} />
         <View style={styles.dp}>
           <Text style={styles.title}>Desempenho pessoal</Text>

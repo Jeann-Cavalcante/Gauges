@@ -1,10 +1,9 @@
-import { StyleSheet, Platform } from "react-native";
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: "#F3F3F4",
   },
   dp: {
     position: "relative",

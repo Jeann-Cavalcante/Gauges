@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={globalStyles.container}>
       <Home />
-      <StatusBar style="auto" />
+      <StatusBar style="light" backgroundColor="#004589" />
     </View>
   );
 }
