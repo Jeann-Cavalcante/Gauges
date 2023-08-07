@@ -18,7 +18,7 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone https://github.com/Jeann-Cavalcante/app-dietas-react-native.git
+git clone [https://github.com/Jeann-Cavalcante/app-dietas-react-native.git](https://github.com/Jeann-Cavalcante/Gauges.git)
 
 # instalar dependências
 npm install --legacy-peer-deps
