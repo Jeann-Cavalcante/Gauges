@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
     flexDirection: "column",
-    marginBottom: 10,
+    backgroundColor: "#F3F3F4",
   },
   containerGauges: {
     position: "relative",

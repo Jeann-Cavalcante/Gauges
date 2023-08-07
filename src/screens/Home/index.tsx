@@ -7,7 +7,6 @@ import Tabs from "../../components/Tabs";
 import { useState } from "react";
 import Menu from "../../components/Menu";
 
-
 const Home = () => {
   const [active, setActive] = useState("pessoal" as "pessoal" | "departamento");
 
@@ -16,7 +15,7 @@ const Home = () => {
   };
 
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{ flex: 1 }}>
       <Menu />
       <ScrollView style={styles.container}>
         <Tabs handleActive={handleActive} active={active} />
