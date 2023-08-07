@@ -4,18 +4,21 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
+    flexDirection: "column",
+    marginBottom: 10,
   },
-  dp: {
+  containerGauges: {
     position: "relative",
     width: "100%",
     borderRadius: 10,
     justifyContent: "space-between",
-    marginTop: 40,
     backgroundColor: "#fff",
     paddingHorizontal: 20,
     paddingVertical: 15,
+    marginTop: 15,
+    height: 200,
   },
-  containerGauges: {
+  contentGauges: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -29,9 +32,10 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     backgroundColor: "#fff",
     borderRadius: 10,
-    marginTop: 20,
     paddingHorizontal: 20,
     paddingVertical: 15,
+    marginTop: 15,
+    height: 200,
   },
   pies: {
     flexDirection: "row",

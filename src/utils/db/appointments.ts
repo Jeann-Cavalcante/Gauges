@@ -18,6 +18,7 @@ export const appointments: AppointmentsDb[] = [
       { name: "paperclip", color: "#000", notification: 0 },
       { name: "hipchat", color: "#000", notification: 0 },
     ],
+    arrow: "arrow-right-bottom",
   },
 
   {

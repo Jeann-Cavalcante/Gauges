@@ -3,9 +3,10 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: "#FFF",
-    marginTop: 20,
     paddingHorizontal: 20,
     paddingVertical: 15,
+    marginTop: 15,
+    borderRadius: 10,
   },
   containerCard: {
     marginTop: 20,
@@ -16,21 +17,20 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
     borderWidth: 2,
     borderRadius: 10,
-    padding: 10,
+    padding: 15,
     marginBottom: 10,
     backgroundColor: "#EFEFEF",
     position: "relative",
   },
   image: {
-    width: 20,
-    height: 20,
+    width: 22,
+    height: 22,
     borderRadius: 10,
     shadowColor: "#000",
     shadowRadius: 2,
     shadowOffset: {
       width: 3,
       height: 3,
-
     },
     position: "absolute",
     top: -10,
@@ -70,4 +70,9 @@ export const styles = StyleSheet.create({
     position: "absolute",
     left: -15,
   },
+  arrow: {
+    position: "absolute",
+    top: 12,
+    left: -10,
+  }
 });

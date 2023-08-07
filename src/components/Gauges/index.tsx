@@ -25,8 +25,7 @@ const Gauges = ({ value, titleLabel }: PropsGauges) => {
         value={value}
         size={80}
         minValue={0}
-        maxValue={80}
-        allowedDecimals={0}
+        maxValue={100}
         labels={[
           {
             name: "Low Risk",

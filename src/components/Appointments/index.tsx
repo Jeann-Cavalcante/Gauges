@@ -2,6 +2,7 @@ import { Image, Text, View } from "react-native";
 import { styles } from "./styles";
 import { Fontisto } from "@expo/vector-icons";
 import { appointments } from "../../utils/db/appointments";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const Appointments = () => {
  
@@ -27,6 +28,15 @@ const Appointments = () => {
                 <Image
                   style={styles.image}
                   source={{ uri: appointment.image }}
+                />
+              )}
+
+              {appointment.arrow && (
+                <MaterialCommunityIcons
+                  style={styles.arrow}
+                  name={appointment.arrow as any}
+                  size={23}
+                  color="#005AE9"
                 />
               )}
             </>

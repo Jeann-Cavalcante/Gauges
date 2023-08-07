@@ -16,4 +16,5 @@ export type AppointmentsDb = {
   icons: Icons[];
   alert?: string;
   image?: string;
+  arrow?: string;
 };
